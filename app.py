@@ -64,7 +64,7 @@ def handle_request():
 #       image = numpy.array(image)
 #       pred = model.predict_classes([image])[0]
 #       sign = classes[pred+1]
-      return "Working
+      return "Working"
       
 
     else:
