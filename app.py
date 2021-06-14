@@ -54,17 +54,17 @@ app = flask.Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def handle_request():
     if request.method == "POST":
-      imagefile = flask.request.files['image']
-      filename = werkzeug.utils.secure_filename(imagefile.filename)
-      print("\nReceived image File name : " + imagefile.filename)
-      imagefile.save(filename)
-      image = Image.open("androidFlask.jpg")
-      image = image.resize((30,30))
-      image = numpy.expand_dims(image, axis=0)
-      image = numpy.array(image)
-      pred = model.predict_classes([image])[0]
-      sign = classes[pred+1]
-      return sign
+#       imagefile = flask.request.files['image']
+#       filename = werkzeug.utils.secure_filename(imagefile.filename)
+#       print("\nReceived image File name : " + imagefile.filename)
+#       imagefile.save(filename)
+#       image = Image.open("androidFlask.jpg")
+#       image = image.resize((30,30))
+#       image = numpy.expand_dims(image, axis=0)
+#       image = numpy.array(image)
+#       pred = model.predict_classes([image])[0]
+#       sign = classes[pred+1]
+      return "Working
       
 
     else:
