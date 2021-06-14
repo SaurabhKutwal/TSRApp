@@ -3,7 +3,7 @@ werkzeug
 numpy
 pandas
 tensorflow
-PIL
+Pillow
 sklearn
 keras
 gunicorn
