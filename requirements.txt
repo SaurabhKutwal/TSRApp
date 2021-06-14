@@ -2,9 +2,7 @@ flask
 werkzeug
 numpy
 pandas
-tensorflow
 Pillow
-sklearn
 keras
 gunicorn
 seaborn
