@@ -2,7 +2,7 @@ import flask
 import werkzeug
 from flask import request
 import numpy
-from PIL import ImageTk, Image
+#from PIL import ImageTk, Image
 from keras.models import load_model
 model = load_model('trafficclassifier.h5')
 
