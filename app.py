@@ -3,7 +3,7 @@ import werkzeug
 from flask import request
 import numpy
 from PIL import ImageTk, Image
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 model = load_model('trafficclassifier.h5')
 
 classes = { 1:'Speed limit (20km/h)',
